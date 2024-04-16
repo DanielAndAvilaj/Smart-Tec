@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+        <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/main-logo.png" class="logo">
+            </a>
+            <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="navbar-icon">
+                <use xlink:href="#navbar-icon"></use>
+              </svg>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+              <div class="offcanvas-header px-4 pb-0">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/main-logo.png" class="logo">
+                </a>
+                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link me-4 active" href="#billboard">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-4" href="#company-services">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-4" href="#mobile-products">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-4" href="#smart-watches">Relojes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-4" href="#yearly-sale">Venta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-4" href="#latest-blog">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">paginas</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="about.html" class="dropdown-item">About</a>
+                      </li>
+                      <li>
+                        <a href="blog.html" class="dropdown-item">Blog</a>
+                      </li>
+                      <li>
+                        <a href="shop.html" class="dropdown-item">Shop</a>
+                      </li>
+                      <li>
+                        <a href="cart.html" class="dropdown-item">Cart</a>
+                      </li>
+                      <li>
+                        <a href="checkout.html" class="dropdown-item">Checkout</a>
+                      </li>
+                      <li>
+                        <a href="single-product.html" class="dropdown-item">Single Product</a>
+                      </li>
+                      <li>
+                        <a href="contact.html" class="dropdown-item">Contact</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <div class="user-items ps-5">
+                      <ul class="d-flex justify-content-end list-unstyled">
+                        <li class="search-item pe-3">
+                          <a href="#" class="search-button">
+                            <svg class="search">
+                              <use xlink:href="#search"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="pe-3">
+                          <a href="#">
+                            <svg class="user">
+                              <use xlink:href="#user"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cart.html">
+                            <svg class="cart">
+                              <use xlink:href="#cart"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <div class="carrito-de-compras" style="overflow-y: auto;">
+        <table class="table">
+            <thead>
+              <tr class="carrito-de-compras">
+                <th scope="col">id#</th>
+                <th scope="col">imagen</th>
+                <th scope="col">nombre</th>
+                <th scope="col" class="carrito-descripcion">Descripcion</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <th>1</th>
+                <td><img src="images/cart-item1.jpg" alt="Iphone"></td>
+                <td>Iphone 13 pro</td>
+                <td>
+                    <ul>
+                        <li>Capacidad de 256GB</li>
+                        <li>Color grafito</li>
+                        <li>Pantalla Super Retina XDR de 6,1 pulgadas</li>
+                        <li>Resolución de pantalla: 2.532 x 1.170 píxeles</li>
+                        <li>Tecnología ProMotion con frecuencia de actualización adaptativa de hasta 120 Hz</li>
+                        <li>Compatible con HDR</li>
+                    </ul>
+                </td>
+                <td>$1.500.000</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td><img src="images/cart-item2.jpg" alt="smart-watch"></td>
+                <td>Pink Watch</td>
+                <td>
+                    <ul>
+                        <li>Pantalla de cristal zafiro</li>
+                        <li>Carga rápida</li>
+                        <li>Tamaño de pantalla de 37,33 mm</li>
+                        <li>Sensores de temperatura, acelerómetro, barómetro, giroscopia, sensor geomagnético y sensor de luz</li>
+                        <li>Material de acero inoxidable</li>
+                    </ul>
+                </td>
+                <td>$370.000</td>
+              </tr>
+              <div class="total-compra text-end mt-3" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: white; padding: 20px;">
+                <h5>Total de la compra: $1.870.000</h5>
+                <button class="btn btn-primary">Pagar</button>
+            </div>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
